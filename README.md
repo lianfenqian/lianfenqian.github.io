@@ -1,16 +1,38 @@
-## Hi there 👋
+</> Markdown
 
-<!--
-**lianfenqian/lianfenqian** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Dr. Lianfen Qian
 
-Here are some ideas to get you started:
+Professor of Practice in Statistics
+Department of Mathematics
+The University of Arizona
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## About Me
+
+I am a statistician and educator interested in statistical modeling, data science, financial mathematics, and applied statistics.
+
+## Research Interests
+
+- Statistical modeling
+- Time series analysis
+- Change point detection
+- Survival analysis
+- Business analytics
+- Data science
+
+## Teaching
+
+- Theoretical and Applied Statistics
+- Financial Mathematics
+- Statistical Machine Learning
+- Survival Analysis
+- Longitudinal Data Analysis
+
+## Publications
+
+[Lianfen Qian (0000-0002-0286-4588) - ORCID](https://orcid.org/0000-0002-0286-4588)
+
+## Contact
+
+Email address: Lqian01@arizona.edu
+Department of Mathematics
+The University of Arizona
