@@ -1,5 +1,3 @@
-</> Markdown
-
 # Dr. Lianfen Qian
 
 Professor of Practice in Statistics
