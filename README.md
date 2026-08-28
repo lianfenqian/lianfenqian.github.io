@@ -1,33 +1,44 @@
-# Dr. Lianfen Qian
+# Undergraduate Statistics and Analytics Courses Taught
 
-Professor of Practice in Statistics
-Department of Mathematics
-The University of Arizona
+- DATA 498D Senior Capstone (U of A)
+- MATH 466 Theory of Statistics (U of A) 
+- DATA 467 Introduction to Applied Regression and Generalized Linear Models (U of A)
+- DATA 474 Introduction to Statistical Machine Learning (U of A, both on-ground and online)
+- MATH 498H Honor Thesis (independent study, U of A)
+- Introductory Statistics; Introduction to Biostatistics 
+- Probability and Statistics 1 & 2 
+- Applied Statistics 1 & its Lab; Applied Statistics 2 (Multivariate Statistics) 
+- Computational Statistics; Statistical Learning 
+- Probability and Statistics for Engineers; Applied Time Series and Forecasting 
+- Statistical Designs/Planning Investigations/Quality Control Theory 
+- Intermediate Statistics and its Lab;
+- Business Analytics
 
-## About Me
+## Undergraduate Mathematics Courses Taught
 
-I am a statistician and educator interested in statistical modeling, data science, financial mathematics, and applied statistics.
+- MATH 462/DATA 462 Financial Mathematics (U of A, both on-ground and online)
+- Calculus with Analytic Geometry 1
+- Methods of Calculus
+- Matrix Theory
+- Actuarial Math 1 & 2
+- Engineering Math 2
+- Mathematics for Liberal Arts 1 & 2.
 
-## Research Interests
+## Graduate Courses Taught
 
-- Statistical modeling
-- Time series analysis
-- Change point detection
-- Survival analysis
-- Business analytics
-- Data science
-
-## Teaching
-
-- Theoretical and Applied Statistics
-- Financial Mathematics
-- Statistical Machine Learning
-- Survival Analysis
+- Mathematical Statistics
+- Regression Analysis
+- Advanced Research in Mathematics
+- Biostatistics 1
+- Survival Analysis and Clinical Trials
 - Longitudinal Data Analysis
-
-## Publications
-
-[Lianfen Qian (0000-0002-0286-4588) - ORCID](https://orcid.org/0000-0002-0286-4588)
+- Statistical Computing
+- Applied Statistics Methods
+- Topics in Probability and Statistics
+- Analysis of Financial Time Series
+- Statistical Methods for Environmental Sciences
+- Business Analytics & Modeling
+- Economics and Advanced Statistics
 
 ## Contact
 
