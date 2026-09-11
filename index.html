@@ -28,34 +28,28 @@
         <!-- Introduction -->
         <section class="intro">
 
-            <div class="photo">
-                <img src="images/profile.jpg" alt="Dr. Lianfen Qian" width="140" height="160">
-            </div>
-
-            <div class="bio">
-
+            <div class="profile">
+                <img src="images/profile.jpg" alt="Dr. Lianfen Qian" class="profile-photo">
+            
+                <div class="profile-info">
                 <h1>Dr. Lianfen Qian</h1>
-
                 <hr>
+                <p><strong>Professor of Practice</strong></p>
+                <p>Department of Mathematics</p>
+                <p>The University of Arizona</p>
+                </div>
+            </div>
+     <p>I am a Professor of Practice in the <a href="https://www.math.arizona.edu/">
+                    Department of Mathematics</a> at the
+                    <a href="https://www.arizona.edu/"> University of Arizona</a>.
+     </p>
 
-                <p><strong>Professor of Practice</strong><br>
-                Department of Mathematics, The University of Arizona</p>
-
-                <p>
-                    I am a Professor of Practice in the
-                    <a href="https://www.math.arizona.edu/">
-                    Department of Mathematics</a>
-                    at the
-                    <a href="https://www.arizona.edu/">
-                    University of Arizona</a>.
-                </p>
-
-                <p>
+    <p>
                     My research interests include statistical methods, time series analysis,
                     structure change detection, survival analysis,
                     and applications of statistics to
                     real-world problems.
-                </p>
+    </p>
 
                 <p>
                     You can find my
@@ -65,7 +59,28 @@
             </div>
 
         </section>
+<style>
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
 
+.profile-photo {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-info h1 {
+    margin: 0 0 10px 0;
+}
+
+.profile-info p {
+    margin: 5px 0;
+}
+</style>
 
         <!-- Research Interests -->
         <section>
