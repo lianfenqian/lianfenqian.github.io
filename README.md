@@ -1,36 +1,148 @@
-# Dr. Lianfen Qian
+# Mini Reproducible Sales Project
 
-Professor of Practice in Statistics
-Department of Mathematics
-The University of Arizona
+## 1. Project purpose
 
-## About Me
+This project demonstrates a simple reproducible data-management workflow:
 
-I am a statistician and educator interested in statistical modeling, data science, financial mathematics, and applied statistics.
+**raw data → cleaning → processed data → analysis → table + figure**
 
-## Research Interests
+The data are synthetic and represent sales transactions from January–March 2026.
 
-- Statistical modeling
-- Time series analysis
-- Change point detection
-- Survival analysis
-- Business analytics
-- Data science
+## 2. Project structure
 
-## Teaching
+```text
+mini_reproducible_project/
+├── data/
+│   ├── raw/
+│   │   └── sales_raw.csv
+│   └── processed/
+│       └── sales_clean.csv
+├── scripts/
+│   ├── 01_cleaning.R
+│   └── 02_analysis.R
+├── results/
+│   ├── tables/
+│   │   └── sales_by_product.csv
+│   └── figures/
+│       └── monthly_sales.png
+└── README.md
+```
 
-- Theoretical and Applied Statistics
-- Financial Mathematics
-- Statistical Machine Learning
-- Survival Analysis
-- Longitudinal Data Analysis
+## 3. Data-management decisions
 
-## Publications
+The raw data intentionally contain common problems:
 
-[Lianfen Qian (0000-0002-0286-4588) - ORCID](https://orcid.org/0000-0002-0286-4588)
+- mixed date formats
+- inconsistent capitalization
+- leading/trailing spaces
+- a duplicate transaction ID
+- a missing quantity
+- an impossible negative price
 
-## Contact
+The cleaning script:
 
-Email address: Lqian01@arizona.edu
-Department of Mathematics
-The University of Arizona
+1. standardizes variable names;
+2. standardizes text values;
+3. parses dates;
+4. converts numeric variables;
+5. removes duplicate transaction IDs;
+6. converts impossible prices to missing;
+7. removes records missing required analysis fields;
+8. creates `sales = quantity × unit_price`;
+9. writes the processed dataset.
+
+The raw data are **never overwritten**.
+
+## 4. How to reproduce the results
+
+### Requirements
+
+- R (base R is sufficient)
+- Git
+
+### Step 1: Clone the repository
+
+```bash
+git clone <YOUR-REPOSITORY-URL>
+cd mini_reproducible_project
+```
+
+### Step 2: Run the cleaning script
+
+From the project root:
+
+```bash
+Rscript scripts/01_cleaning.R
+```
+
+This creates:
+
+```text
+data/processed/sales_clean.csv
+```
+
+### Step 3: Run the analysis script
+
+```bash
+Rscript scripts/02_analysis.R
+```
+
+This creates:
+
+```text
+results/tables/sales_by_product.csv
+results/figures/monthly_sales.png
+```
+
+### Step 4: Inspect the results
+
+The analysis produces:
+
+- a table summarizing transactions, units, total sales, and average sale by product;
+- a bar chart of monthly sales.
+
+## 5. Reproducibility principle
+
+A different person should be able to start with the repository, run the scripts in order, and regenerate the results without manually editing the data.
+
+## 6. Important practice
+
+Do not edit:
+
+```text
+data/raw/sales_raw.csv
+```
+
+after collection. If a problem is found, document the correction in the cleaning script so that the transformation can be reproduced.
+
+## 7. Git history
+
+A suggested history is:
+
+```bash
+git init
+git add data/raw/sales_raw.csv README.md
+git commit -m "Add raw data and project documentation"
+
+git add scripts/01_cleaning.R
+git commit -m "Add data cleaning workflow"
+
+Rscript scripts/01_cleaning.R
+git add data/processed/sales_clean.csv
+git commit -m "Create processed dataset"
+
+git add scripts/02_analysis.R
+git commit -m "Add analysis workflow"
+
+Rscript scripts/02_analysis.R
+git add results/
+git commit -m "Generate reproducible table and figure"
+```
+
+Check the history with:
+
+```bash
+git log --oneline --decorate --graph
+```
+
+A clean history should show the project developing step by step rather than one large unexplained commit.
